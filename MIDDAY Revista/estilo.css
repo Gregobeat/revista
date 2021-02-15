@@ -1,0 +1,272 @@
+.barra
+{
+ width: 100%;
+ height: 45px;
+ background-color: rgb(6, 6, 82);
+}
+
+.barra > a
+
+{
+    font-family:  'Mukta', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 10%;
+}
+
+.portada
+{
+    background: white;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .1s ease-in-out  ;
+    opacity: 0.6;
+    animation: portada 28s infinite linear;
+}
+}
+@media (max-width: 600px){
+    .portada{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+ .logo  {
+
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    left: 50%;
+    top: 3px;
+    transform: translateX(-50%) translateY(50%);
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo2  {
+
+    
+    
+    font-size: 40px;
+    font-family:  'Mukta', sans-serif;
+    color: rgb(0, 0, 0);
+    left: 50%;
+    top: 45%;
+    transform: translateX(-50%) translateY(50%);
+    position: absolute;
+    text-align: center;
+}
+
+.logo a{
+    background:rgb(246, 51, 51, 0.6) ;
+    width: 300px;
+    font-size: 15px;
+    text-decoration: none;
+    color:white;
+    padding: 2px 5px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%) translateY(50%);
+    position: absolute;
+    text-align: center;
+}
+.logo a:hover {
+    background-color: rgba(255, 217, 47, 0.6);
+    color:333;
+}
+
+.formulario {
+    
+    left: 40%;
+    position: absolute;
+    text-align: center;
+ 
+    
+}
+}
+
+#noticias {
+    font-size: 15px;
+    font-family:  'Mukta', sans-serif;
+    transform: translateX(-50%) translateY(50%);
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes portada {
+    0% {
+        background-image: url(portada1.jpg);}
+    25% {
+        background-image: url(portada1.jpg);}
+    26% {
+        background-image: url(portada2.jpg);}
+    50% {
+        background-image: url(portada2.jpg);}
+    51% {
+        background-image: url(portada3.jpg);}    
+    75% {
+        background-image: url(portada3.jpg);}
+    76% {
+        background-image: url(portada4.jpg);}
+    100% {
+         background-image: url(portada4.jpg);}
+    
+}
+
+
+.post-list {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.post-img-1{
+    background: url(imagen1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-2{
+    background: url(imagen2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}.post-img-3{
+    background: url(imagen3.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-4{
+    background: url(imagen4.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-5{
+    background: url(imagen5.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+.post-img-6{
+    background: url(imagen6.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post {
+    box-shadow: 0 1px 6px 1px rgb(0, 0, 0, .1 );
+    overflow: hidden;
+    transition: .2s;
+}
+
+.post:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 1px 12px 2px rgba(49, 5, 151, 0.15);
+}
+
+.post-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3,
+.post:hover .post-img-4,
+.post:hover .post-img-5,
+.post:hover .post-img-6,
+
+ {
+    transform: scale(1.1);
+}
+.post-body {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-body span {
+    display: inline-block;
+    color: rgb(10, 9, 9);
+    margin-bottom: 10px; 
+    
+}
+
+.post-body h2 {
+    margin-bottom: 15px;
+    font-family:  'Mukta', sans-serif;
+    font-size: 35px;
+}
+
+.post-body p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.post-body .post-link {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background:#ffbc04 ;
+    color: #ffff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px 1px rgba(124, 119, 119, 0.1);
+    transition: .2s;
+    font-family:  'Mukta', sans-serif;
+    
+}
+
+.post-body .post-link:hover {
+    background: #da3131;
+    box-shadow: 0 1px 6px 1px rgb(0, 0, 0, .3 );
+    transition: .2s;
+    
+}
+
+@media (max-width: 840px){
+    .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px){
+    .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
